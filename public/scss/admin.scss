@@ -1,0 +1,133 @@
+@import "./variables";
+
+.admin-news,
+.admin-poster {
+    margin-top: 50px;
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .admin-news__title,
+    .admin-poster__title {
+        @include title(30px);
+    }
+
+    .admin-news__items,
+    .admin-poster__items {
+        display: flex;
+        justify-content: space-between;
+
+        .admin-news__list,
+        .admin-poster__list {
+            list-style-type: none;
+
+            .admin-news__list-title,
+            .admin-poster__list-title {
+                color: $black;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: italic;
+                margin-bottom: 20px;
+            }
+
+            .admin-news__list-item,
+            .admin-poster__list-item {
+                font-size: 20px;
+                font-weight: 500;
+                color: #1E201F;
+                margin-bottom: 10px;
+            }
+        }
+
+        .admin-news__form,
+        .admin-poster__form {
+            max-width: 530px;
+            width: 100%;
+
+            .admin-news__form-title,
+            .admin-poster__form-title {
+                color: $black;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: italic;
+                margin-bottom: 30px;
+
+                span {
+                    margin: 0 16px 0 35px;
+                }
+            }
+
+            .admin-news__form-item,
+            .admin-poster__form-item {
+                margin-bottom: 15px;
+
+                label {
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: $black;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                input,
+                textarea,
+                select {
+                    width: 100%;
+                    height: 25px;
+                    background-color: #EFEFEF;
+                    border: none;
+                    outline: none;
+                    padding: 0 15px;
+                }
+
+                textarea {
+                    height: 50px;
+                    padding: 5px 15px;
+                }
+            }
+
+            .admin-news__form-btsn,
+            .admin-poster__form-btsn {
+                display: flex;
+                justify-content: center;
+                column-gap: 30px;
+
+                button {
+                    height: 45px;
+                    width: 154px;
+                    border-radius: 22.5px;
+                    font-weight: 300;
+                    font-style: italic;
+                    font-size: 18px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+
+                .admin-news__form-add,
+                .admin-poster__form-add {
+                    color: #fff;
+                    background-color: #FA434B;
+                }
+
+                .admin-news__form-delete,
+                .admin-poster__form-delete {
+                    color: $black;
+                    background-color: #c4c4c4;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

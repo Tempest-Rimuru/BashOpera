@@ -1,0 +1,71 @@
+@import "./variables";
+
+.signin {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .title {
+        @include title(60px);
+        text-align: center;
+    }
+
+    .signin__form {
+        max-width: 530px;
+        margin: 0 auto;
+
+        .signin__form-item {
+            margin-bottom: 20px;
+
+            label {
+                margin-bottom: 10px;
+                color: $black;
+                font-size: 18px;
+                font-weight: 500;
+                display: block;
+            }
+            input {
+                display: block;
+                width: 100%;
+                height: 25px;
+                background-color: #EFEFEF;
+                border: none;
+                outline: none;
+                padding: 0 15px;
+            }
+        }
+
+        .signin__form-btns {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+
+            .signin__form-login,
+            .signin__form-close {
+                border-radius: 22.5px;
+                height: 45px;
+                width: 154px;
+                border: none;
+                font-size: 18px;
+                font-style: italic;
+                font-weight: 300;
+                cursor: pointer;
+            }
+            .signin__form-login {
+                background-color: #FA434B;
+                color: #FFFFFF;
+            }
+            .signin__form-close {
+                color: #282828;
+                background-color: #C4C4C4;
+                display: flex;
+                align-items: center;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+
